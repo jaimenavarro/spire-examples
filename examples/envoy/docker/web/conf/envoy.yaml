@@ -92,7 +92,7 @@ static_resources:
         - endpoint:	
             address:	
               socket_address:	
-                address: echo	
+                address: echo-envoy
                 port_value: 8001
     transport_socket:
       name: envoy.transport_sockets.tls
@@ -138,7 +138,7 @@ static_resources:
         - endpoint:	
             address:	
               socket_address:	
-                address: echo	
+                address: echo-envoy
                 port_value: 8002
     transport_socket:
       name: envoy.transport_sockets.tls

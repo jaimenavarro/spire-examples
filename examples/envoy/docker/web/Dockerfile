@@ -1,6 +1,8 @@
 FROM ghcr.io/spiffe/spire-agent:1.11.2 as spire
 
 FROM envoyproxy/envoy:v1.25.1
+RUN apt-get update && \
+    apt-get install -y curl iputils-ping telnet netcat dnsutils
 RUN mkdir -p /opt/spire/conf/agent
 RUN mkdir -p /opt/spire/data/agent
 COPY --from=spire /opt/spire/bin/spire-agent /opt/spire/bin/spire-agent

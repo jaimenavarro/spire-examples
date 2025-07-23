@@ -10,4 +10,4 @@ docker compose -f "${DIR}"/docker-compose.yml exec -d web web-server -log /tmp/w
 
 # Start up the echo server
 echo "Starting echo server..."
-docker compose -f "${DIR}"/docker-compose.yml exec -d echo echo-server -log /tmp/echo-server.log
+#docker compose -f "${DIR}"/docker-compose.yml exec -d echo echo-server -log /tmp/echo-server.log
